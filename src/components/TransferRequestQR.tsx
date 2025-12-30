@@ -13,7 +13,7 @@ export const TransferRequestQR: FC<TransferRequestQRProps> = ({ reference }) => 
   useEffect(() => {
     // Create a transfer request QR code
     const urlParams: TransferRequestURLFields = {
-      recipient: Keypair.generate().publicKey,
+      recipient: new PublicKey('HhjkkWaHbMLLve8mmRsvpVkPQ8hz8Dt5BvXA5y7S92Hz'),
       amount: new BigNumber(1 / 1000), // amount in SOL
       reference,
       label: 'My Store',

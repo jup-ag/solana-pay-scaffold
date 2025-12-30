@@ -31,7 +31,7 @@ export const SendTransferRequest: FC<SendTransferRequestProps> = ({ reference })
 
       const transferInstruction = SystemProgram.transfer({
         fromPubkey: publicKey,
-        toPubkey: Keypair.generate().publicKey,
+        toPubkey: new PublicKey('HhjkkWaHbMLLve8mmRsvpVkPQ8hz8Dt5BvXA5y7S92Hz'),
         lamports: LAMPORTS_PER_SOL / 1000,
       });
 
