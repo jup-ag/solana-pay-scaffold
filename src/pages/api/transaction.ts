@@ -24,8 +24,8 @@ export type PostError = {
 // Response for GET request
 function get(res: NextApiResponse<GetResponse>) {
   res.status(200).json({
-    label: 'My Store',
-    icon: 'https://solanapay.com/src/img/branding/Solanapay.com/downloads/gradient.svg',
+    label: 'Jupiter test store',
+    icon: 'https://static1.tokenterminal.com//jupiter/products/jupiterdca/logo.png',
   });
 }
 
@@ -50,7 +50,7 @@ async function postImpl(
 
   const transferInstruction = SystemProgram.transfer({
     fromPubkey: account,
-    toPubkey: Keypair.generate().publicKey,
+    toPubkey: new PublicKey('HhjkkWaHbMLLve8mmRsvpVkPQ8hz8Dt5BvXA5y7S92Hz'),
     lamports: LAMPORTS_PER_SOL / 1000,
   });
 
@@ -73,7 +73,7 @@ async function postImpl(
   // Return the serialized transaction
   return {
     transaction: base64,
-    message: 'Thankyou for your purchase!',
+    message: 'Thank you for your purchase!',
     network,
   };
 }
