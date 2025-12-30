@@ -24,8 +24,8 @@ export type PostError = {
 // Response for GET request
 function get(res: NextApiResponse<GetResponse>) {
   res.status(200).json({
-    label: 'Jupiter test store',
-    icon: 'https://static1.tokenterminal.com//jupiter/products/jupiterdca/logo.png',
+    label: 'My Store',
+    icon: 'https://solanapay.com/src/img/branding/Solanapay.com/downloads/gradient.svg',
   });
 }
 
@@ -73,7 +73,7 @@ async function postImpl(
   // Return the serialized transaction
   return {
     transaction: base64,
-    message: 'Thank you for your purchase!',
+    message: 'Thankyou for your purchase!',
     network,
   };
 }
