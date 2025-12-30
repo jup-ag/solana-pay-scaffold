@@ -24,8 +24,8 @@ export type PostError = {
 // Response for GET request
 function get(res: NextApiResponse<GetResponse>) {
   res.status(200).json({
-    label: 'My Store',
-    icon: 'https://solanapay.com/src/img/branding/Solanapay.com/downloads/gradient.svg',
+    label: 'Test store',
+    icon: 'https://thumb.silhouette-ac.com/t/bf/bf26aff7f132f2d759a5fb25d2598ae0_t.jpeg',
   });
 }
 
